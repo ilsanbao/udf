@@ -21,13 +21,12 @@ public class GetBrandid extends UDF {
         if (orgModel == null) {
             return null;
         }
-        ModelBean model = new ModelBean(orgModel);
         try {
-            model = BM.getModel(orgModel);
+            ModelBean model = BM.getModel(orgModel);
             return model.getBrandId();
         } catch (Exception e) {
             e.printStackTrace();
-            return model.getBrandId();
+            return -1;
         }
     }
 

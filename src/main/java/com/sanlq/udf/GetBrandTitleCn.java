@@ -21,7 +21,7 @@ public class GetBrandTitleCn extends UDF {
         if (orgModel == null) {
             return null;
         }
-        ModelBean model = new ModelBean(orgModel);
+        ModelBean model = new ModelBean();
         try {
             model = BM.getModel(orgModel);
             return model.getBrandTitleCn();

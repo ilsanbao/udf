@@ -34,16 +34,10 @@ public class ModelBean {
     private Integer sizeInch;
     private Integer netType;
 
-    public ModelBean(String titleOrg) {
-        this.brandId = 0;
-        this.brandTitleCn = "unknown";
-        this.brandTitleEn = "unknown";
-        this.titleCn = titleOrg;
-        this.titleEn = titleOrg;
-        this.titleOrg = titleOrg;
+    public ModelBean() {
     }
 
-    
+        
     public Integer getBrandId() {
         return brandId;
     }
